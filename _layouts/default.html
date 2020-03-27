@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Micky's Projects</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/css/common.css">
+  </head>
+  <body>
+  <header>
+    <strong>Welcome to Micky's Projects</strong>
+    {% include nav.html %}
+    <nav>
+      <ul>
+        <li><a href="{{site.baseurl}}/index.html" class ="{% if page.url == '/index.html'%}current{% endif %}">home</a></li>
+        <li><a href="{{site.baseurl}}/about.html" class ="{% if page.url == '/about.html'%}current{% endif %}">About</a></li>
+    </nav>
+  </header>
+
+  {{content}}
+  </body>
+
+  <footer>
+    <p> Copyright 2020 Micky's Projects by Micky Kumar</p>
+  </footer>
+</html>
